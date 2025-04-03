@@ -81,14 +81,14 @@ function About() {
             </div>
 
             <div className="card-body">
-              <h2 className="command-title">$ ls -1 ui-ux</h2>
+              <h2 className="command-title">$ ls ui-ux</h2>
               <div className="skill">
                 <span>figma</span>
               </div>
             </div>
 
             <div className="card-body">
-              <h2 className="command-title">$ ls -1 certification</h2>
+              <h2 className="command-title">$ ls certification</h2>
               <div className="skill">
                 <span>freecodecamp</span>
               </div>
