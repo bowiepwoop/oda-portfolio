@@ -21,7 +21,7 @@
   --background-dark: #000000;
   --text-color: #ffffff;
   --terminal-green: #00ff00;
-  --terminal-bg: rgba(0, 0, 0, 0.85);
+  --terminal-bg: rgba(0, 0, 0, 0.493);
   --cyber-pink: #cc6d8b;
   --cyber-yellow: #beb495;
   --cyber-purple: #9d4edd;
@@ -217,13 +217,13 @@ body, html {
   z-index: 1000;
 }
 
-/* Add styles for loading terminal */
+/* Terminal */
 .loading-terminal {
   width: 600px;
   margin: 0 auto;
   background-color: var(--terminal-bg);
-  border: 1px solid var(--terminal-green);
-  box-shadow: 0 0 20px rgba(0, 255, 0, 0.3);
+  border: 1px solid var(--primary-color);
+  box-shadow: 0 0 20px rgba(204, 109, 139, 0.3);
 }
 
 .loading-terminal .terminal-body {
@@ -422,23 +422,23 @@ body, html {
 /* Terminal */
 .terminal-container {
   background-color: var(--terminal-bg);
-  border: 1px solid var(--terminal-green);
+  border: 1px solid var(--primary-color);
   border-radius: 5px;
   margin-bottom: 20px;
-  box-shadow: 0 0 10px rgba(0, 255, 0, 0.3);
+  box-shadow: 0 0 10px rgba(204, 109, 139, 0.3);
 }
 
 .terminal-header {
   padding: 10px;
-  background-color: rgba(0, 20, 0, 0.8);
-  border-bottom: 1px solid var(--terminal-green);
+  background-color: var(--terminal-bg);
+  border-bottom: 1px solid var(--primary-color);
   display: flex;
   align-items: center;
 }
 
 .terminal-title {
   font-family: '3270 Nerd Font', monospace;
-  color: var(--terminal-green);
+  color: var(--secondary-color);
   flex-grow: 1;
   text-align: center;
 }
@@ -446,7 +446,7 @@ body, html {
 .terminal-body {
   padding: 15px;
   font-family: '3270 Nerd Font', monospace;
-  color: var(--terminal-green);
+  color: var(--secondary-color);
   font-size: 1rem;
   height: 150px;
   overflow: hidden;

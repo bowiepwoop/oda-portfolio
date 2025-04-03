@@ -2,20 +2,21 @@ import React, { useState, useEffect } from 'react';
 
 function Terminal({ isLoading }) {
     const [terminalText, setTerminalText] = useState('');
-    const loadingText = `> INITIALIZING SYSTEM...
-  > CHECKING HARDWARE COMPONENTS...
-  > LOADING NEURAL INTERFACE...
-  > ESTABLISHING CONNECTION...
-  > ACCESSING MAINFRAME...
-  > LOADING USER PROFILE...
-  > SYSTEM READY`;
+    const loadingText = `
+  > initializing portfolio . . .
+  > checking hardware components . . .
+  > loading neural interface . . .
+  > establishing connection . . .
+  > accessing mainframe . . .
+  > loading user profile . . .
+  > portfolio ready`;
   
-    const standardText = `> SYSTEM BOOT INITIALIZED
-  > LOADING USER PROFILE
-  > ACCESSING NEURAL NETWORK
-  > WELCOME TO THE SYSTEM
-  > PORTFOLIO MODULES LOADED
-  > READY FOR INPUT...`;
+    const standardText = `> system boot initialized . . .
+  > loading user profile . . .
+  > accessing neural interface . . .
+  > w e l c o m e t o t h e s y s t e m !
+  > portfolio modules loaded
+  > ready for input . . .`;
   
     const fullText = isLoading ? loadingText : standardText;
   
@@ -36,7 +37,7 @@ function Terminal({ isLoading }) {
     return (
       <div className="terminal-container loading-terminal">
         <div className="terminal-header">
-          <div className="terminal-title">SYSTEM.BOOT</div>
+          <div className="terminal-title">system.boot</div>
         </div>
         <div className="terminal-body">
           <pre>{terminalText}<span className="cursor">_</span></pre>
