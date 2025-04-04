@@ -387,16 +387,18 @@ body, html {
 
 .whoami {
   font-size: 1.2rem;
-  color: var(--text-color);
+  color: var(--primary-color);
+  font-family: monospace;
+  white-space: pre-wrap; 
+}
+
+.command-title {
+  color: lime;
 }
 
 .skill {
   font-size: 1.2rem;
   color: var(--text-color);
-}
-
-.command-title {
-  margin-top: 10px;
 }
 
 /* Projects */
